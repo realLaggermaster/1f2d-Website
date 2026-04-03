@@ -1,6 +1,6 @@
-/*Body*/
+/* Body */
 body {
-    background-image: url(../images/2023-01-07_19.05.15.png);
+    background-image: url(../images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,7 +10,6 @@ body {
 }
 
 /* Website header style */
-
 .main-header {
     margin-top: 100px;
 }
@@ -58,7 +57,7 @@ body {
     }
 }
  
-/*Button design & button box*/
+/* Button design & button box */
 #index-button {
     font-size: 12px;
     font-weight: 600;
