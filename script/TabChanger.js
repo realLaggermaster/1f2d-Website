@@ -1,4 +1,14 @@
 function changeContent(contentId) {
+    document.querySelectorAll('.index-button').forEach(button => {
+        button.classList.remove('active');
+    });
+
+    const activeButton = document.querySelector('.index-button[data-content="' + contentId + '"]');
+    
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
+
     document.getElementById('main').style.display = 'none';
     document.getElementById('community-vids').style.display = 'none';
     document.getElementById('donate').style.display = 'none';
