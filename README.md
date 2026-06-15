@@ -1,9 +1,9 @@
-## 1f2d Website
-This is my website project for 1f2d.net <br>
+## 1f2d-Website
+Website front-end project for 1f2d Minecraft server  <br>
 <br>
 Install packages
 ```
-npm i
+npm install
 ```
 Start live server
 ```
