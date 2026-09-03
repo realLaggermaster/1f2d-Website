@@ -1,0 +1,32 @@
+{
+    "news": [
+        {
+            "date": "date",
+            "message": "news"
+        }
+    ],
+    "changelog": [
+        {
+            "date": "date",
+            "message": "changelog"
+        }
+    ],
+    "videos": {
+        "lastupdated": {
+            "date": "date"
+        },
+        "video-links": [
+            {
+                "url": "https://www.youtube.com/embed/dQw4w9WgXcQ?si=hFOXSH4XEABporwJ"
+            }
+        ]
+    },
+    "serverlist": [
+        {
+            "url": "https://minecraftservers.org/server/629289"
+        }
+    ],
+    "lastupdated": {
+        "date": "date"
+    }
+}
