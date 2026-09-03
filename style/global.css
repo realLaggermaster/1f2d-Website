@@ -39,6 +39,10 @@ body {
     margin-top: 0;
 }
 
+#news-message {
+    white-space: pre-line;
+}
+
 .link-text {
     color: #EBE2CA;
     font-family: Helvetica, sans-serif;
