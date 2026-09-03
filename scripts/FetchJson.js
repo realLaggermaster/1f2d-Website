@@ -27,11 +27,29 @@ fetch("./data/data.json")
 
             data.videos["video-links"].forEach(video => {
                 const iframe = document.createElement("iframe");
-                
+
                 iframe.width = "460";
                 iframe.height = "245";
                 iframe.src = video.url;
                 container.appendChild(iframe);
+            });
+        }
+
+        // Server list
+        if (data.serverlist) {
+            const container = document.getElementById("serverlist-links");
+
+            data.serverlist.forEach(list => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+
+                a.className = "link-text";
+                a.target = "_blank";
+                a.href = list.url;
+                a.textContent = list.url;
+
+                li.appendChild(a);
+                container.appendChild(li);
             });
         }
 
