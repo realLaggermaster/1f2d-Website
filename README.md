@@ -5,6 +5,8 @@ Install packages
 ```
 npm install
 ```
+In ./data dir copy example.data.json and name it data.json <br>
+<br>
 Start live server
 ```
 npm run start
