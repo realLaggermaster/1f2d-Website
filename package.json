@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npx live-server"
+    "dev": "npx live-server --entry-file=index.html"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
