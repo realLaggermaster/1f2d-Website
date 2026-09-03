@@ -39,8 +39,15 @@ body {
     margin-top: 0;
 }
 
-#news-message {
+#news-message, 
+#change-log-message {
     white-space: pre-line;
+}
+
+#videos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .link-text {
