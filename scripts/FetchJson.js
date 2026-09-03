@@ -22,6 +22,18 @@ fetch("./data/data.json")
         if (data.videos.lastupdated) {
             document.getElementById("videos-date").textContent = "Last listed " + data.videos.lastupdated.date;
         }
+        if (data.videos) {
+            const container = document.getElementById("videos-container");
+
+            data.videos["video-links"].forEach(video => {
+                const iframe = document.createElement("iframe");
+                
+                iframe.width = "460";
+                iframe.height = "245";
+                iframe.src = video.url;
+                container.appendChild(iframe);
+            });
+        }
 
         // Website last updated
         if (data.lastupdated) {
