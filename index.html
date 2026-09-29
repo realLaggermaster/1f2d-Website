@@ -18,7 +18,7 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="1fighter2defenders is a minecraft survival server with a world that never resets">
     <meta name="keywords"
-        content="1f2d, 1fighter2defenders, 1f2d.net, oldfag, newfag, 6b6t, 7b7t, 8b8t, p-anarchy, cracked, anarchy, 4chan, v, vg, vm, anarchy, minecraft, server, survival, vanilla, 2b2t, 2b2t.org,PvP, pvp, Facepunch, facepunch, reag, reager, number, one, somethingawful, something, awful">
+        content="1fighter2defenders, 1f2d, 1f2d.net, 6b6t, 6b6t.org, anarchy, 4chan, v, vg, anarchy, minecraft, server, vanilla, 2B2T.net, 2b2t.net, 2b2t, PvP, pvp, Facepunch, facepunch, reag, reager, reager.org, number, one, somethingawful, something, awful, 2b2t.org">
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/navbar.css">
@@ -28,20 +28,22 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
 
 <body>
     <div class="main-header">
-        <center><a href="" class="website-header"><span class="red-color">1FIGHTER</span><span
-                    class="blue-color">2DEFENDERS</span></a></center>
+        <center>
+            <a href="" class="website-header">
+                <span class="red-color">1FIGHTER</span><span class="blue-color">2DEFENDERS</span>
+            </a>
+        </center>
     </div>
-    <div class="main-buttons">
-        <a class="index-button active" data-content="main" onclick="changeContent('main')">MAIN</a>
+    <div class="navbar">
+        <a class="nav-button active" data-content="main" onclick="changeContent('main')">MAIN</a>
         <span class="raquo">»</span>
-        <a class="index-button" data-content="community-vids" onclick="changeContent('community-vids')">COMMUNITY
-            VIDEOS</a>
+        <a class="nav-button" data-content="community-vids" onclick="changeContent('community-vids')">COMMUNITY VIDEOS</a>
         <span class="raquo">»</span>
-        <a class="index-button" data-content="donate" onclick="changeContent('donate')">DONATE</a>
+        <a class="nav-button" data-content="donate" onclick="changeContent('donate')">DONATE</a>
         <span class="raquo">»</span>
-        <a class="index-button" data-content="contact" onclick="changeContent('contact')">CONTACT & MISC</a>
+        <a class="nav-button" data-content="contact" onclick="changeContent('contact')">CONTACT & MISC</a>
     </div>
-    <div class="info-box" id="info-box">
+    <div class="info-box">
 
         <!-- Main page -->
         <div id="main">
@@ -56,7 +58,6 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
                 </ul>
             </div>
             <br>
-            <!-- Server news -->
             <div class="server_news">
                 <h1 class="info-header" id="news-header"></h1>
                 <ul>
@@ -64,15 +65,13 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
                 </ul>
             </div>
             <br>
-            <!-- Change log -->
-            <div class="change_log">
+            <div class="changelog">
                 <h1 class="info-header" id="change-log-header"></h1>
                 <ul>
                     <p class="info-text" id="change-log-message"></p>
                 </ul>
             </div>
             <br>
-            <!-- Help bring more players -->
             <div class="help">
                 <h1 class="info-header">Help bring more players</h1>
                 <ul>
@@ -88,7 +87,6 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
             <br>
             <br>
             <br>
-            <!-- Website last updated -->
             <div class="last_updated">
                 <p class="info-text" id="website-last-updated"></p>
             </div>
@@ -96,29 +94,28 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
 
         <!-- Community videos page -->
         <div id="community-vids" style="display:none;">
-            <div>
-                <h1 class="info-header">Community youtube vidoes</h1>
-                <ul>
-                    If you wish to list more videos then contact us via e-mail: contact.1f2d@gmail.com <br>
-                    <br>
-                    <p id="videos-date">Last listed</p>
-                </ul>
-                <ul>
-                    <div id="videos-container"></div>
-                </ul>
-            </div>
+            <h1 class="info-header">Community youtube vidoes</h1>
+            <ul>
+                <p class="info-text">
+                    If you wish to list more videos then contact us via e-mail: contact.1f2d@gmail.com
+                </p>
+            </ul>
+            <br>
+            <ul>
+                <p id="videos-date">Last listed</p>
+                <div id="videos-container"></div>
+            </ul>
         </div>
 
         <!-- Donate page -->
         <div id="donate" style="display:none;">
-            <div>
-                <h1 class="info-header">Donate</h1>
-                <ul>
-                    <p class="info-text">
-                        The server's upkeep cost are paid 100% by me, but if you want to help cover other server costs
-                        such as ads or server software/plugins, you
-                        can do so by donating! <br>
-                        To receive rewards for donating, the minimum amount is 5€
+            <h1 class="info-header">Donate</h1>
+            <ul>
+                <p class="info-text">
+                    The server's upkeep cost are paid 100% by me, but if you want to help cover other server costs
+                    such as ads or server software/plugins, you
+                    can do so by donating! <br>
+                    To receive rewards for donating, the minimum amount is 5€
                     <p class="list-title">What you will get from donating:</p>
                     <li>You will receive a in-game prefix tag [Donator] in the tablist</li>
                     <li>You get your very own 3 messages displayed on the server's Message Of The Day (MOTD)</li>
@@ -137,80 +134,71 @@ GitHub repo: https://github.com/realLaggermaster/1f2d-Website
                     </ul>
                     <br>
                     NOTE: I will not refund any donations!
-                    </p>
-                    <div id="donate-button-container">
-                        <div id="donate-button"></div>
-                        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-                        <script>
-                            PayPal.Donation.Button({
-                                env: 'production',
-                                hosted_button_id: 'AHLHYLJBXM2YG',
-                                image: {
-                                    src: '/images/btn_donate_SM.gif',
-                                    alt: 'Donate with PayPal button',
-                                    title: 'Donation towards 1f2d.net',
-                                }
-                            }).render('#donate-button');
-                        </script>
-                    </div>
-                </ul>
-            </div>
+                </p>
+                <div id="donate-button-container">
+                    <div id="donate-button"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                        PayPal.Donation.Button({
+                            env: 'production',
+                            hosted_button_id: 'AHLHYLJBXM2YG',
+                            image: {
+                                src: '/images/btn_donate_SM.gif',
+                                alt: 'Donate with PayPal button',
+                                title: 'Donation towards 1f2d.net',
+                            }
+                        }).render('#donate-button');
+                    </script>
+                </div>
+            </ul>
         </div>
 
         <!-- Contact & misc page -->
         <div id="contact" style="display:none;">
-            <div>
-                <h1 class="info-header">About</h1>
-                <ul>
-                    <p class="info-text">
-                        The server is maintained by <a class="link-text" target="_blank"
-                            href="https://et.namemc.com/profile/Laggermaster.2">laggermaster.</a> I host and run the
-                        server for enjoyment, with no intent of getting profits out of it.
-                    </p>
-                </ul>
-            </div>
+            <h1 class="info-header">About</h1>
+            <ul>
+                <p class="info-text">
+                    The server is maintained by <a class="link-text" target="_blank"
+                        href="https://et.namemc.com/profile/Laggermaster.2">laggermaster.</a> I host and run the
+                    server for enjoyment, with no intent of getting profits out of it.
+                </p>
+            </ul>
             <br>
-            <div>
-                <h1 class="info-header">Official links</h1>
-                <ul>
-                    <p class="info-text">
-                        Reddit: <a class="link-text" target="_blank"
-                            href="https://www.reddit.com/r/1f2dofficial/">reddit.com/r/1f2dofficial/</a><br>
-                        Discord: <a class="link-text" href="https://dsc.gg/1f2d" target="_blank">dsc.gg/1f2d</a><br>
-                    </p>
-                </ul>
-            </div>
+            <h1 class="info-header">Official links</h1>
+            <ul>
+                <p class="info-text">
+                    Reddit: <a class="link-text" target="_blank"
+                        href="https://www.reddit.com/r/1f2dofficial/">reddit.com/r/1f2dofficial/</a><br>
+                    Discord: <a class="link-text" href="https://dsc.gg/1f2d" target="_blank">dsc.gg/1f2d</a><br>
+                </p>
+            </ul>
             <br>
-            <div>
-                <h1 class="info-header">Contacts</h1>
-                <ul>
-                    <p class="info-text">
-                        Feel free to contact me directly for questions or suggestions! <br>
-                        Discord: @laggermaster <br>
-                        E-mail: contact.1f2d@gmail.com <br>
-                        <br>
-                    </p>
-                </ul>
-            </div>
+            <h1 class="info-header">Contacts</h1>
+            <ul>
+                <p class="info-text">
+                    Feel free to contact me directly for questions or suggestions! <br>
+                    Discord: @laggermaster <br>
+                    E-mail: contact.1f2d@gmail.com <br>
+                    <br>
+                </p>
+            </ul>
         </div>
 
         <!-- Server lists page -->
         <div id="serverlist" style="display:none;">
-            <div>
-                <a href="" onclick="changeContent('main')">back</a>
-                <h1 class="info-header">Server list sites</h1>
-                <ul>
-                    <p class="info-text">
-                        Thank you for considering to vote for us. We have listed 1f2d to mutlible server list websites.
-                        <br>
-                        Most effective votes are the first 4 links. Others are not that popular, but voting on all sites
-                        is the best way to support us!
-                    </p>
-                </ul>
-                <ul>
-                    <p class="info-text" id="serverlist-links"></p>
-                </ul>
-            </div>
+            <a href="" onclick="changeContent('main')">back</a>
+            <h1 class="info-header">Server list sites</h1>
+            <ul>
+                <p class="info-text">
+                    Thank you for considering to vote for us. We have listed 1f2d to mutlible server list websites.
+                    <br>
+                    Most effective votes are the first 4 links. Others are not that popular, but voting on all sites
+                    is the best way to support us!
+                </p>
+            </ul>
+            <ul>
+                <p class="info-text" id="serverlist-links"></p>
+            </ul>
         </div>
     </div>
     <script src="./scripts/tabChanger.js"></script>

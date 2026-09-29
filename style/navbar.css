@@ -1,4 +1,4 @@
-.index-button {
+.nav-button {
     font-size: 11px;
     font-weight: bold;
     font-family: Arial;
@@ -8,16 +8,16 @@
     color: #EBE2CA;
 }
 
-.index-button:hover {
+.nav-button:hover {
     text-shadow: 2px 2px 2px #c16b50;
     cursor: pointer;
 }
 
-.index-button.active {
+.nav-button.active {
     font-size: 9pt;
 }
 
-.main-buttons {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,9 +1,9 @@
 function changeContent(contentId) {
-    document.querySelectorAll(".index-button").forEach(button => {
+    document.querySelectorAll(".nav-button").forEach(button => {
         button.classList.remove("active");
     });
 
-    const activeButton = document.querySelector('.index-button[data-content="' + contentId + '"]');
+    const activeButton = document.querySelector('.nav-button[data-content="' + contentId + '"]');
     
     if (activeButton) {
         activeButton.classList.add("active");
