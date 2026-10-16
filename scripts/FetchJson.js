@@ -67,6 +67,8 @@ fetch("https://api.mcstatus.io/v2/status/java/1f2d.net")
         if (response.ok) {
             return response.json();
         }
+
+        throw new Error("Failed to fetch server status");
     })
     .then(data => {
         const statusText = document.querySelector(".status-text");
@@ -80,5 +82,8 @@ fetch("https://api.mcstatus.io/v2/status/java/1f2d.net")
         }
     })
     .catch(error => {
-        console.error("Error fetching data:", error);
+        console.error(error);
+        
+        const statusText = document.querySelector(".status-text");
+        statusText.textContent = error;
     });
