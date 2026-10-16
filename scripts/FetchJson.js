@@ -69,7 +69,15 @@ fetch("https://api.mcstatus.io/v2/status/java/1f2d.net")
         }
     })
     .then(data => {
-
+        const statusText = document.querySelector(".status-text");
+        
+        if (data.online == true) {
+            statusText.textContent = `${data.players.online}/${data.players.max} online`;
+        }
+        
+        if (data.online == false) {
+            statusText.textContent = "server-offline"
+        }
     })
     .catch(error => {
         console.error("Error fetching data:", error);
