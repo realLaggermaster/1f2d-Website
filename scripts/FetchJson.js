@@ -61,3 +61,16 @@ fetch("./data/data.json")
     .catch(error => {
         console.error("Error fetching data:", error);
     });
+
+fetch("https://api.mcstatus.io/v2/status/java/1f2d.net")
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        }
+    })
+    .then(data => {
+
+    })
+    .catch(error => {
+        console.error("Error fetching data:", error);
+    });
