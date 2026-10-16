@@ -72,9 +72,11 @@ fetch("https://api.mcstatus.io/v2/status/java/1f2d.net")
     })
     .then(data => {
         const statusText = document.querySelector(".status-text");
+        const statusImage = document.getElementById("status-image");
         
         if (data.online == true) {
             statusText.textContent = `${data.players.online}/${data.players.max} online`;
+            statusImage.src = "./images/status_green.png";
         }
         
         if (data.online == false) {
